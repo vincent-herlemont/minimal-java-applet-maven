@@ -1,11 +1,11 @@
-minimal-java-maven
+minimal-java-applet-maven
 ==================
 
 A Minimal Java Applet built with Maven project.
 
-# Passkey = "abcd1234"
-keytool -genkey -alias minimal -keyalg RSA -keystore src/main/resources/minimal-keystore.jks -keysize 2048 -dname "CN=minimal, OU=development, O=minimal, L=City, S=MN, C=US" -validity 3650
-keytool -selfcert -alias minimal -keystore src/main/resources/minimal-keystore.jks
+How to. . .
+You can find all of the commands to test this in the commands.txt file.
 
-mvn clean package
-appletviewer test.html
+1. Create self-signed cert in a java keystore(.jks).
+2. Compile, package, and sign your artifacts.
+3. Test with appletviewer.
